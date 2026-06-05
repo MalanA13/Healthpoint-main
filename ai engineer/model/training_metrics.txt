@@ -1,0 +1,12 @@
+ROC AUC: 0.7279
+Decision threshold: 0.35
+
+              precision    recall  f1-score   support
+
+           0       0.89      0.63      0.74     17642
+           1       0.32      0.70      0.44      4463
+
+    accuracy                           0.64     22105
+   macro avg       0.61      0.66      0.59     22105
+weighted avg       0.78      0.64      0.68     22105
+

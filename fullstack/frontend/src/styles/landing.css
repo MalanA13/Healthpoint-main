@@ -1,0 +1,162 @@
+.hero-section {
+  background: linear-gradient(135deg, #0d9488 0%, #0f172a 100%);
+  color: white;
+  overflow: hidden;
+  position: relative;
+}
+
+.hero-pattern {
+  background-image: radial-gradient(circle at 20% 20%, rgba(153,246,228,.24), transparent 28%),
+    linear-gradient(45deg, rgba(255,255,255,.07) 25%, transparent 25%);
+  background-size: auto, 44px 44px;
+  inset: 0;
+  position: absolute;
+}
+
+.hero-content {
+  align-items: center;
+  display: grid;
+  gap: var(--space-10);
+  grid-template-columns: minmax(0, 1fr) 320px;
+  min-height: calc(100vh - 70px);
+  padding: 96px 0;
+  position: relative;
+}
+
+.hero-content h1 {
+  font-size: clamp(42px, 7vw, 76px);
+  letter-spacing: 0;
+  line-height: 1;
+  margin-bottom: var(--space-5);
+}
+
+.hero-content p {
+  color: #dffdf8;
+  font-size: var(--font-size-xl);
+  line-height: 1.6;
+  max-width: 690px;
+}
+
+.ai-badge {
+  align-items: center;
+  background: rgba(255,255,255,.12);
+  border: 1px solid rgba(255,255,255,.22);
+  border-radius: var(--radius-full);
+  display: inline-flex;
+  gap: var(--space-2);
+  margin-bottom: var(--space-5);
+  padding: var(--space-2) var(--space-4);
+}
+
+.hero-actions { display: flex; flex-wrap: wrap; gap: var(--space-3); margin-top: var(--space-6); }
+
+.floating-card {
+  animation: float 4s ease-in-out infinite;
+  background: rgba(255,255,255,.13);
+  border: 1px solid rgba(255,255,255,.24);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-xl);
+  display: grid;
+  gap: var(--space-3);
+  justify-items: center;
+  padding: var(--space-10);
+  text-align: center;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-12px); }
+}
+
+.problem-section,
+.feature-section,
+.works-section {
+  padding: 88px 0;
+}
+
+.problem-section {
+  align-items: center;
+  display: grid;
+  gap: var(--space-10);
+  grid-template-columns: 360px 1fr;
+}
+
+.problem-visual {
+  align-items: center;
+  background: linear-gradient(135deg, var(--color-primary-bg), white);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  color: var(--color-primary);
+  display: grid;
+  min-height: 260px;
+  place-items: center;
+}
+
+.check-list { color: var(--color-text-secondary); display: grid; gap: var(--space-3); font-size: var(--font-size-lg); }
+
+.feature-section h2,
+.works-section h2 { font-size: var(--font-size-4xl); }
+
+.feature-grid {
+  display: grid;
+  gap: var(--space-5);
+  grid-template-columns: repeat(3, 1fr);
+}
+
+.feature-card,
+.step-card {
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-sm);
+  display: grid;
+  gap: var(--space-3);
+  padding: var(--space-6);
+  transition: transform var(--transition-base), box-shadow var(--transition-base);
+}
+
+.feature-card:hover,
+.step-card:hover {
+  box-shadow: var(--shadow-lg);
+  transform: translateY(-4px) scale(1.01);
+}
+
+.feature-card svg { color: var(--color-primary); }
+.feature-card p { color: var(--color-text-secondary); margin: 0; }
+
+.step-row {
+  display: grid;
+  gap: var(--space-4);
+  grid-template-columns: repeat(4, 1fr);
+}
+
+.step-card span {
+  align-items: center;
+  background: var(--color-primary);
+  border-radius: var(--radius-full);
+  color: white;
+  display: inline-flex;
+  height: 34px;
+  justify-content: center;
+  width: 34px;
+}
+
+.tech-section { background: white; border-block: 1px solid var(--color-border); }
+.tech-strip { display: flex; flex-wrap: wrap; gap: var(--space-3); justify-content: center; padding: var(--space-6) 0; }
+.tech-strip span { background: var(--color-primary-bg); border-radius: var(--radius-full); color: var(--color-primary-dark); font-weight: 800; padding: var(--space-2) var(--space-5); }
+
+.final-cta {
+  background: linear-gradient(135deg, #0f766e, #0f172a);
+  color: white;
+  padding: 76px 0;
+  text-align: center;
+}
+
+.final-cta h2 { font-size: var(--font-size-4xl); }
+
+@media (max-width: 900px) {
+  .hero-content,
+  .problem-section,
+  .feature-grid,
+  .step-row { grid-template-columns: 1fr; }
+}

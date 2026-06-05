@@ -1,0 +1,28 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Manrope', 'Space Grotesk', 'Segoe UI', 'Arial', sans-serif;
+  --font-display: 'Space Grotesk', 'Segoe UI', 'Arial', sans-serif;
+
+  --color-primary: #0d9488;
+  --color-primary-dark: #0f766e;
+  --color-primary-light: #ccfbf1;
+
+  --animate-ping-slow: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+  --animate-float: float 6s ease-in-out infinite;
+
+  @keyframes float {
+    0%, 100% {
+      transform: translateY(0);
+    }
+    50% {
+      transform: translateY(-12px);
+    }
+  }
+}
+
+/* Leaflet Map CSS Fix for tile rendering conflicts */
+.leaflet-container img {
+  max-width: none !important;
+  display: inline !important;
+}

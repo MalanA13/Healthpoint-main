@@ -1,0 +1,17 @@
+{
+  "name": "healpoint-backend",
+  "version": "1.0.0",
+  "description": "RESTful API for HealPoint MVP",
+  "main": "app.js",
+  "scripts": {
+    "dev": "node --watch app.js",
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "bcryptjs": "^3.0.3",
+    "cors": "^2.8.5",
+    "express": "^4.18.3",
+    "jsonwebtoken": "^9.0.2",
+    "morgan": "^1.10.0"
+  }
+}

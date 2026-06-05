@@ -1,0 +1,76 @@
+.auth-shell {
+  align-items: stretch;
+  display: grid;
+  gap: var(--space-8);
+  grid-template-columns: 1fr 440px;
+  min-height: calc(100vh - 70px);
+  padding: var(--space-12) 0;
+}
+
+.auth-side {
+  background: linear-gradient(135deg, var(--color-primary), #0f172a);
+  border-radius: var(--radius-xl);
+  color: white;
+  display: grid;
+  padding: var(--space-10);
+  place-content: center;
+}
+
+.register-side { background: linear-gradient(135deg, #2563eb, var(--color-primary-dark)); }
+.auth-side h1 { font-size: clamp(34px, 5vw, 58px); line-height: 1; }
+.auth-side p { color: #dffdf8; font-size: var(--font-size-lg); }
+
+.auth-form-card {
+  align-self: center;
+  background: white;
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-xl);
+  box-shadow: var(--shadow-lg);
+  display: grid;
+  gap: var(--space-5);
+  padding: var(--space-8);
+}
+
+.auth-form-card form,
+.refined-form { display: grid; gap: var(--space-4); }
+
+label {
+  color: var(--color-text-secondary);
+  display: grid;
+  font-size: var(--font-size-sm);
+  font-weight: 800;
+  gap: var(--space-2);
+}
+
+input, select, textarea {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  min-height: 42px;
+  padding: 0 var(--space-3);
+  transition: border var(--transition-base), box-shadow var(--transition-base);
+  width: 100%;
+}
+
+textarea { min-height: 110px; padding-block: var(--space-3); }
+input:focus, select:focus, textarea:focus { border-color: var(--color-primary); box-shadow: 0 0 0 4px var(--color-primary-bg); outline: none; }
+
+.input-icon { align-items: center; display: flex; position: relative; }
+.input-icon svg { color: var(--color-text-muted); left: 12px; position: absolute; }
+.input-icon input { padding-left: 40px; }
+
+.demo-box {
+  background: var(--color-primary-bg);
+  border-radius: var(--radius-md);
+  color: var(--color-primary-dark);
+  display: grid;
+  gap: var(--space-1);
+  padding: var(--space-3);
+}
+
+.strength { background: var(--color-border); border-radius: var(--radius-full); height: 8px; overflow: hidden; }
+.strength span { display: block; height: 100%; transition: width var(--transition-base); }
+.strength-weak span { background: var(--color-danger); width: 30%; }
+.strength-medium span { background: var(--color-warning); width: 65%; }
+.strength-strong span { background: var(--color-success); width: 100%; }
+
+@media (max-width: 860px) { .auth-shell { grid-template-columns: 1fr; } }
