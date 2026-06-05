@@ -27,7 +27,7 @@ Kami adalah tim lintas disiplin yang berkolaborasi dalam mewujudkan HealPoint da
 | **Hasbi Nurwahid** | CDCC222D6Y0401 | **Data Scientist** (Gathering, assessing, & cleaning data, analisis pola, dataset preparation) | Aktif |
 | **Yan Syafiq Albari** | CDCC222D6Y2284 | **Data Scientist** (EDA, visualisasi, Streamlit dashboard, data dictionary, insights) | Aktif |
 | **M. Nur Daffa** | CACC222D6Y2621 | **AI Engineer** (Pengembangan model TensorFlow, training, evaluasi, custom components) | Aktif |
-| **M. Adam Sirojuddin** | CACC222D6Y071 | **AI Engineer** (Export model, inference script, Flask AI service integration, optimasi) | Aktif |
+| **M. Adam Sirojuddin** | CACC222D6Y071 | **AI Engineer** (Export model, inference script, Flask AI service integration, optimasi) | Non Aktif |
 | **Muhammad Alan Andika** | CFCC299D6Y2464 | **Full-Stack Developer** (Frontend React.js, Smart Scheduling UI, geolocation hub, API integration) | Aktif |
 | **Eko Wahyudi** | CFCC525D6Y0109 | **Full-Stack Developer** (Backend Express.js, JWT Auth, database, appointment management, proxy AI) | Aktif |
 
