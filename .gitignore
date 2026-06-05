@@ -1,0 +1,89 @@
+# Root .gitignore for multi-app repository
+
+# Node.js / Vite / React
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.DS_Store
+Thumbs.db
+.env
+.env.*
+!.env.example
+.vite/
+/dist/
+/build/
+/coverage/
+
+# Express backend
+/fullstack/backend/node_modules/
+/fullstack/backend/npm-debug.log*
+/fullstack/backend/.env
+/fullstack/backend/.env.*
+/fullstack/backend/backend.log
+/fullstack/backend/ai-service/ai-service.log
+
+# Python / Flask / TensorFlow / Streamlit
+__pycache__/
+*.py[cod]
+*$py.class
+.Python
+pyvenv.cfg
+venv/
+ENV/
+env/
+.venv/
+.venv/**
+.venv*
+
+# Training artifacts and caches
+**/checkpoints/
+*.ckpt
+
+# Python tooling caches
+.pytest_cache/
+.mypy_cache/
+.coverage
+htmlcov/
+*.cover
+*.coverage.*
+.cache/
+
+# Streamlit
+.streamlit/
+
+# Logs and runtime artifacts
+*.log
+*.log.*
+*.pid
+*.seed
+*.pid.lock
+
+# OS / editor
+.DS_Store
+Thumbs.db
+desktop.ini
+npm-debug.log*
+yarn-error.log*
+.idea/
+.vscode/
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.swp
+
+# Local project caches
+*.tmp
+*.temp
+*.bak
+*~
+
+# Ignore node_modules in any nested app
+**/node_modules/
+
+# Keep package manifests and source files tracked
+!package.json
+!pnpm-lock.yaml
+!yarn.lock
